@@ -1,21 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\userController;
 
-Route::get('/', function () {
-    return view('welcome');
+/* Route::get('/{name}', function ($name){
+    return view('home');
 });
-
-/* Route::get('/demo' ,function(){
-    echo "test laravel";
-});
-
-Route::get('/dem' ,function(){
-    echo "test laravel";
-});
-
  */
-
- Route::get('/demo',function(){
-    return view('demo');
- });
+Route:get('/user-form', function(){
+    return view('user-from');
+});
+/* Route::view('user-form', 'user-form'); */
