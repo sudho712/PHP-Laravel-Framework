@@ -8,3 +8,6 @@ use App\Http\Controllers\RegController;
 /* Route::get('/register',[RegController::class,'index']); */
 Route::get('/formcd', [RegController::class, 'index']);
 
+Route::view('/', 'home')->name('home');
+Route::view('/about', 'about')->name('about');
+Route::view('/contact', 'contact')->name('contact');
